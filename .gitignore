@@ -1,0 +1,40 @@
+# =========================
+# Python / Rasa
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+
+# Rasa generated files
+models/
+.rasa/
+results/
+
+# =========================
+# Node / React / Vite
+# =========================
+node_modules/
+.vite/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# =========================
+# IDE / Editor
+# =========================
+.idea/
+.vscode/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db

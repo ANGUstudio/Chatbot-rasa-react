@@ -1,0 +1,26 @@
+{
+  "name": "systemrun",
+  "version": "1.0.0",
+  "description": "System runner for Rasa + React chatbot",
+  "main": "index.js",
+  "scripts": {
+    "train-rasa": "cd ../backend && rasa train",
+    "start-actions": "cd ../backend && rasa run actions",
+    "start-rasa": "cd ../backend && rasa run --enable-api --cors \"*\"",
+    "start-ui": "cd ../frontend && npm run dev",
+    "start-all": "concurrently \"npm run start-actions\" \"npm run start-rasa\" \"npm run start-ui\"",
+    "full-start": "npm run train-rasa && npm run start-all"
+  },
+  "keywords": [
+    "chatbot",
+    "rasa",
+    "react",
+    "tailwindcss",
+    "ai"
+  ],
+  "author": "ANGUstudio",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
